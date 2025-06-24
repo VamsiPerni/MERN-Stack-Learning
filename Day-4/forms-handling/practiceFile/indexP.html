@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-4 | JS | Forms</title>
+
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Registration Form</h2>
+    </header>
+
+    <main>
+      <form action="./thankyouP.html">
+        <input
+          type="text"
+          placeholder="name"
+          name="username"
+          onkeyup="handleUserName(event)"
+        />
+        <input type="mail" placeholder="E-mail" name="email" />
+        <input type="password" placeholder="Strong Password" name="password" />
+        <button>Register</button>
+      </form>
+    </main>
+
+    <footer>&copy;Vamsi Perni</footer>
+    <script src="./formP.js"></script>
+  </body>
+</html>
