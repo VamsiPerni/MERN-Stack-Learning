@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-5 | JS | Froms</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        border: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2 id="greetings">Hello!</h2>
+    </header>
+
+    <button>Home</button>
+
+    <main>
+      <form action="./thankyouP.html" onsubmit="handleFormSubmit(event)">
+        <!-- onkeydown -->
+        <p>onkeydown</p>
+        <input
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          onkeydown="handleUsername(event)"
+        />
+
+        <!-- onkeyup -->
+        <p>onkeyup</p>
+        <input
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          onkeyup="handleUsername(event)"
+        />
+
+        <!-- onchange -->
+        <p>onchange</p>
+        <input
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          onchange="handleUsername(event)"
+        />
+
+        <input type="text" placeholder="Your E-mail" name="email" required />
+
+        <input type="text" placeholder="password" name="password" />
+
+        <button>Register</button>
+      </form>
+    </main>
+
+    <footer>&copy;VamsI Perni</footer>
+    <script src="./formP.js"></script>
+  </body>
+</html>

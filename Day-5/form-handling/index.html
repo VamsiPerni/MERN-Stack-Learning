@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 id="greetings">Hello !</h2>
+
+    <!-- onKeydown , onKeyup , onchange -->
+    <p>onkeydown</p>
+    <form action="./thankyou.html" onsubmit="handleFormSubmit(event)">
+      <input
+        type="text"
+        placeholder="Your nickname"
+        name="username"
+        onkeydown="handleUserName(event)"
+      />
+
+      <p>onkeyup</p>
+      <input
+        type="text"
+        placeholder="Your nickname"
+        name="usernameTemp"
+        onkeyup="handleUserName(event)"
+      />
+
+      <p>onchange</p>
+      <input
+        type="text"
+        placeholder="Your nickname"
+        name="usernameTemp"
+        onchange="handleUserName(event)"
+      />
+
+      <input type="email" placeholder="your official email" name="baseEmail" />
+      <input
+        type="password"
+        placeholder="strong password"
+        name="abcdPassword"
+      />
+
+      <p>
+        Even though if we click on Register button , the form will not take to
+        the next page because we have used { preventDefault() } , see js code to
+        know about preventDefault() method
+      </p>
+      <button>Register</button>
+    </form>
+    <script src="./form.js"></script>
+  </body>
+</html>
