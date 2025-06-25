@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer App | DAY-5</title>
+  </head>
+  <style>
+    #timer-text {
+      padding-left: 110px;
+    }
+  </style>
+  <body>
+    <header>
+      <h2>Timer App</h2>
+    </header>
+
+    <main>
+      <div id="timer-container">
+        <label>Enter Minutes : </label>
+        <input
+          id="minutes-text"
+          type="number"
+          placeholder="Mintues"
+          name="timer"
+        />
+        <p id="timer-text">Time Left: 00:00</p>
+
+        <button class="buttons" onclick="handleStart()">Start</button>
+        <button class="buttons" onclick="handleStop()">Stop</button>
+        <button class="buttons" onclick="handleResume()">Resume</button>
+        <button class="buttons" onclick="handleReset()">Reset</button>
+      </div>
+    </main>
+
+    <footer id="footer">&copy;Vamsi Perni</footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
