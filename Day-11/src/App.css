@@ -1,0 +1,45 @@
+div {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#pause{
+  background-color: #f44336;
+  color: white;
+}
+
+#play{
+  background-color: #4caf50;
+  color: white;
+}
+
+#lap{
+  background-color: #2196f3;
+  color: white;
+}
+
+#reset {
+  background-color: #ff9800; /* Orange for RESET */
+  color: white;
+}
+
+p{
+  font-size: 18px;
+  margin: 3px 0;
+}
