@@ -1,10 +1,11 @@
 import { useNavigate } from "react-router";
 
-const Header = () => {
+const Header = (props) => {
   const navigate = useNavigate();
+  const { text, handleSearchText } = props;
 
   const handleSearch = () => {
-    navigate(`/search`);
+    navigate(`/search/?text=${text}`);
   };
 
   return (
@@ -14,7 +15,13 @@ const Header = () => {
       </div>
 
       <div>
-        <input className="border-1  border-amber-900 p-1 text-cyan-300" />
+        <input
+          className="border-1  border-amber-900 p-1 text-cyan-300"
+          onChange={(e) => {
+            handleSearchText(e.target.value);
+          }}
+          value={text}
+        />
         <button
           className="border-1  border-amber-900 p-1 text-cyan-300"
           onClick={handleSearch}
