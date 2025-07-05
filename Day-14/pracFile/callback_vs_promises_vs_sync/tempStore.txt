@@ -1,0 +1,6 @@
+{
+    "Name": "Vamsi",
+    "city": "Chirala",
+    "Age": 21,
+    "Course": "CSE"
+}

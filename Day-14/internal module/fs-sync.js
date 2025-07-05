@@ -1,4 +1,5 @@
 // Synchronous , one after another
+// Here the readFileSync() method will read the file synchronously i.e. code executions are blocked until the process is completed where the readFile() method will read the file content in a non-blocking asynchronous manner and return the content in a callback function
 
 const fs = require("node:fs");
 

@@ -6,7 +6,7 @@ const paraHelper = require("./paragraph-formatter.js"); // import
 const resp = textHelper.getCamelCaseText("hello world namsakaram");
 console.log("Answer : ", resp);
 
-const userName = "Likhilesh"; // here we are having the same const userName in text.formatter too but
+const userName = "Likhilesh"; // here we are having the same const userName in text.formatter too but it will do the wrapping so it will not get conflict between each other and our both different values get printed
 console.log("After Username from text-formatter.js", userName);
 
 const resp2 = paraHelper.formatParagraph(
