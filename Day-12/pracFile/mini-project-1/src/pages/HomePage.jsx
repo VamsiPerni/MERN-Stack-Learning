@@ -9,7 +9,7 @@ const HomePage = (props) => {
     <div>
       <Header text={text} handleSearchText={handleSearchText} />
 
-      <main>
+      <main className="mt-2.5 mb-2.5 ">
         <CategoryList />
       </main>
 

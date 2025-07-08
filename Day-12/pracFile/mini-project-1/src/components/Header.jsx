@@ -8,10 +8,16 @@ const Header = (props) => {
     navigate(`/search/?text=${text}`);
   };
 
+  const handleClick = () => {
+    navigate(`/`);
+  };
+
   return (
     <header className="flex bg-black p-4 justify-between">
-      <div>
-        <h1 className="text-amber-300">Shopping Cart</h1>
+      <div className="mb-0.5">
+        <h1 onClick={handleClick} className="text-amber-300">
+          Shopping Cart
+        </h1>
       </div>
 
       <div>

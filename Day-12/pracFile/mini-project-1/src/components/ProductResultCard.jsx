@@ -1,11 +1,15 @@
-// import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 const ProductResultCard = (props) => {
-  //   const navigate = useNavigate;
+  const navigate = useNavigate();
   const { id, title, price, thumbnail } = props;
 
+  const handleViewProduct = () => {
+    navigate(`/${id}/view`);
+  };
+
   return (
-    <div key={id}>
+    <div key={id} onClick={handleViewProduct}>
       <img src={thumbnail} />
       <p>{title}</p>
       <p>Rs. {price * 85}</p>
